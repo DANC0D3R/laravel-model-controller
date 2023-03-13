@@ -1,1 +1,66 @@
-@import "~bootstrap/scss/bootstrap";
+@import '~bootstrap/scss/bootstrap';
+h1{
+    text-align: center;
+}
+ul{
+    list-style:none;
+}
+header{
+    height:80px;
+    width:100vw;
+    display:flex;
+    position:fixed;
+    left:0;
+    top:0;
+    background-color:black;
+    color:white;
+    li{
+        transition: all 0.2s ease-in-out;
+        &:hover{
+        transform: scale(105%);
+        }
+        &.active a{
+            color:#ffc107;
+            text-decoration:underline;
+        }
+        a{
+            color:white;
+            &:hover{
+                color:lightgrey;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+a{
+    text-decoration: none;
+}
+main{
+    background-color:#555;
+    height:100vh;
+    padding:100px 20px 30px;
+    color:white;
+}
+.dc-container .card{
+    height:180px;
+    color:black;
+    background-color:whitesmoke;
+    transition: all 0.2s ease-in-out;
+    &:hover{
+        cursor:pointer;
+        transform: scale(105%);
+    }
+}
+
+.container-details{
+    margin:0 auto;
+    width:60%;
+    text-align:center;
+    padding:50px;
+    .card {
+        color:black;
+        background-color:whitesmoke;
+        font-size:150%;
+    }
+}
