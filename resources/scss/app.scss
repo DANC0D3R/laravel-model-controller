@@ -2,31 +2,37 @@
 h1{
     text-align: center;
 }
+
 ul{
-    list-style:none;
+    list-style: none;
 }
+
 header{
-    height:80px;
-    width:100vw;
-    display:flex;
-    position:fixed;
-    left:0;
-    top:0;
-    background-color:black;
-    color:white;
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    width: 100vw;
+    height: 80px;
+
+    color: #FFFFFF;
+    background-color:#000000;
     li{
         transition: all 0.2s ease-in-out;
         &:hover{
         transform: scale(105%);
         }
         &.active a{
-            color:#ffc107;
-            text-decoration:underline;
+            color: #FFC107;
+
+            text-decoration: underline;
         }
         a{
-            color:white;
+            color: #FFFFFF;
             &:hover{
-                color:lightgrey;
+                color: #D3D3D3;
+
                 text-decoration: underline;
             }
         }
@@ -36,31 +42,58 @@ header{
 a{
     text-decoration: none;
 }
+
 main{
-    background-color:#555;
-    height:100vh;
-    padding:100px 20px 30px;
-    color:white;
+    height: 100vh;
+    
+    padding: 100px 20px 30px;
+
+    color: #FFFFFF;
+    background-color: #555555;
 }
+
 .dc-container .card{
-    height:180px;
-    color:black;
-    background-color:whitesmoke;
+    height: 100%;
+
+    color: #000000;
+    background-color:#F5F5F5;
+
     transition: all 0.2s ease-in-out;
     &:hover{
-        cursor:pointer;
         transform: scale(105%);
+
+        cursor: pointer;
+    }
+    img{
+        height: 75%;
+    }
+    .card-body{
+        height: 25%;
     }
 }
 
 .container-details{
-    margin:0 auto;
-    width:60%;
     text-align:center;
-    padding:50px;
+
+    width: 60%;
+
+    margin: 0 auto;
+    padding: 30px;
     .card {
-        color:black;
-        background-color:whitesmoke;
-        font-size:150%;
+        max-height: 90%;
+
+        padding: 20px 0;
+
+        font-size: 120%;
+        
+        color: #000000;
+        background-color: #F5F5F5;
+    }
+    img{
+        width: 250px;
+        
+        margin: 0 auto;
+
+        object-fit: cover;
     }
 }
